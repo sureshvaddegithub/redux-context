@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'Inter', sans-serif;
+}
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap : 25px;
+  padding:20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.product-item{
+  display: flex;
+  flex-direction: column;
+  width:30%;
+  height:50vh;
+  border : 1px solid black;
+  border-radius: 6px;
 }
+
+.product-item img{
+  width: 100%;
+  height : 65%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  
+}
+
+.product-item div{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding:10px;
+  font-weight: bold;
+}
+
+.product-item div h3{
+  white-space: nowrap;
+}
+
+.product-item button{
+ text-align: center;
+ background-color: black;
+ padding:10px 0px;
+ border:none;
+ color:white;
+ font-weight: bold;
+ border-bottom-left-radius: 6px;
+ border-bottom-right-radius: 6px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  background-color: black;
+  color:white;
+  margin-bottom: 20px;
+}
+.navbar div{
+  display: flex;
+  gap:20px;
+}
+ .navbar div a{
+  color:white;
+  text-decoration: none;
+ }
+
+
+ .cardList{
+  display: flex;
+  width:70%;
+ }
+
+ .checkList{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  background-color: black;
+  color:white;
+  top:130px;
+  right : 30px;
+  bottom:50px;
+  width:25%;
+  padding:10px;
+ }
+
+ .checkList div{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .under{
+  border-top : 1px solid white;
+  padding:10px 0px;
+ }
+
+ .card-item{
+  width:45%;
+ }
+
+
+ button:hover{
+  opacity: 0.9;
+  cursor: pointer;
+  
+ }
